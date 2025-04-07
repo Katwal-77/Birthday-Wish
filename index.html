@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="intro" id="intro">
+            <h1 class="title">Happy Birthday!</h1>
+            <p class="subtitle">Click the heart to begin your surprise...</p>
+            <div class="heart" id="heart">❤️</div>
+            
+            <!-- Enhanced background with animated images -->
+            <div class="intro-background">
+                <div class="background-image image1"></div>
+                <div class="background-image image2"></div>
+                <div class="background-image image3"></div>
+                <div class="background-gradient"></div>
+            </div>
+            
+            <!-- Surprising words -->
+            <div class="surprising-words">
+                <span class="surprise-word" style="--delay:0.5s; --top:20%; --left:25%">Amazing</span>
+                <span class="surprise-word" style="--delay:1.5s; --top:70%; --left:15%">Gorgeous</span>
+                <span class="surprise-word" style="--delay:2.5s; --top:30%; --left:75%">Stunning</span>
+                <span class="surprise-word" style="--delay:3.5s; --top:80%; --left:85%">Radiant</span>
+                <span class="surprise-word" style="--delay:4.5s; --top:50%; --left:60%">Incredible</span>
+                <span class="surprise-word" style="--delay:5.5s; --top:15%; --left:45%">Perfect</span>
+            </div>
+            
+            <!-- Extraordinary birthday wish -->
+            <div class="extraordinary-wish">
+                <span class="wish-letter" style="--delay:0.1s">H</span>
+                <span class="wish-letter" style="--delay:0.2s">a</span>
+                <span class="wish-letter" style="--delay:0.3s">p</span>
+                <span class="wish-letter" style="--delay:0.4s">p</span>
+                <span class="wish-letter" style="--delay:0.5s">y</span>
+                <span class="wish-letter" style="--delay:0.6s"> </span>
+                <span class="wish-letter" style="--delay:0.7s">B</span>
+                <span class="wish-letter" style="--delay:0.8s">i</span>
+                <span class="wish-letter" style="--delay:0.9s">r</span>
+                <span class="wish-letter" style="--delay:1.0s">t</span>
+                <span class="wish-letter" style="--delay:1.1s">h</span>
+                <span class="wish-letter" style="--delay:1.2s">d</span>
+                <span class="wish-letter" style="--delay:1.3s">a</span>
+                <span class="wish-letter" style="--delay:1.4s">y</span>
+                <span class="wish-letter" style="--delay:1.5s">!</span>
+            </div>
+            
+            <!-- Animated roses -->
+            <div class="animated-roses">
+                <div class="rose" style="--delay:1s; --size:40px; --top:15%; --left:10%; --rotate:15deg;"></div>
+                <div class="rose" style="--delay:2s; --size:30px; --top:75%; --left:20%; --rotate:-10deg;"></div>
+                <div class="rose" style="--delay:1.5s; --size:45px; --top:25%; --left:85%; --rotate:20deg;"></div>
+                <div class="rose" style="--delay:3s; --size:35px; --top:65%; --left:90%; --rotate:-15deg;"></div>
+                <div class="rose" style="--delay:2.5s; --size:50px; --top:85%; --left:70%; --rotate:10deg;"></div>
+                <div class="rose" style="--delay:1.8s; --size:25px; --top:10%; --left:60%; --rotate:-5deg;"></div>
+            </div>
+        </div>
+        
+        <!-- Animated photo section -->
+        <div class="animated-photo-section hidden fullpage" id="animated-photo">
+            <!-- Camera shutter and lens effects -->
+            <div class="camera-container">
+                <div class="camera-lens">
+                    <div class="lens-reflection"></div>
+                    <div class="focus-rings"></div>
+                </div>
+                <div class="camera-shutter" id="camera-shutter"></div>
+                <div class="camera-flash" id="camera-flash"></div>
+            </div>
+            
+            <!-- Floating images gallery -->
+            <div class="floating-images-gallery">
+                <!-- These will be populated dynamically with JavaScript -->
+                <div class="floating-image" style="--delay: 3s; --rotate: 10deg; --scale: 0.7; --top: 15%; --left: 20%;">
+                    <div class="polaroid">
+                        <div class="polaroid-image" style="background-image: url('https://via.placeholder.com/150x150/ffd1dc?text=Photo+1')"></div>
+                        <div class="polaroid-caption">First Date</div>
+                    </div>
+                </div>
+                <div class="floating-image" style="--delay: 5s; --rotate: -5deg; --scale: 0.65; --top: 65%; --left: 15%;">
+                    <div class="polaroid">
+                        <div class="polaroid-image" style="background-image: url('https://via.placeholder.com/150x150/ffd1dc?text=Photo+2')"></div>
+                        <div class="polaroid-caption">Movie Night</div>
+                    </div>
+                </div>
+                <div class="floating-image" style="--delay: 7s; --rotate: 7deg; --scale: 0.7; --top: 25%; --left: 80%;">
+                    <div class="polaroid">
+                        <div class="polaroid-image" style="background-image: url('https://via.placeholder.com/150x150/ffd1dc?text=Photo+3')"></div>
+                        <div class="polaroid-caption">That Trip</div>
+                    </div>
+                </div>
+                <div class="floating-image" style="--delay: 9s; --rotate: -8deg; --scale: 0.68; --top: 70%; --left: 75%;">
+                    <div class="polaroid">
+                        <div class="polaroid-image" style="background-image: url('https://via.placeholder.com/150x150/ffd1dc?text=Photo+4')"></div>
+                        <div class="polaroid-caption">Beach Day</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Rockets container -->
+            <div class="rockets-container" id="rockets-container">
+                <!-- Rockets will be added dynamically via JavaScript -->
+            </div>
+            
+            <div class="photo-container">
+                <!-- Birthday candles around the photo -->
+                <div class="birthday-candles">
+                    <div class="candle-wrapper" style="--rotate: 30deg; --delay: 0.2s">
+                        <div class="birthday-candle">
+                            <div class="candle-flame"></div>
+                        </div>
+                    </div>
+                    <div class="candle-wrapper" style="--rotate: 90deg; --delay: 0.5s">
+                        <div class="birthday-candle">
+                            <div class="candle-flame"></div>
+                        </div>
+                    </div>
+                    <div class="candle-wrapper" style="--rotate: 150deg; --delay: 0.8s">
+                        <div class="birthday-candle">
+                            <div class="candle-flame"></div>
+                        </div>
+                    </div>
+                    <div class="candle-wrapper" style="--rotate: 210deg; --delay: 1.1s">
+                        <div class="birthday-candle">
+                            <div class="candle-flame"></div>
+                        </div>
+                    </div>
+                    <div class="candle-wrapper" style="--rotate: 270deg; --delay: 1.4s">
+                        <div class="birthday-candle">
+                            <div class="candle-flame"></div>
+                        </div>
+                    </div>
+                    <div class="candle-wrapper" style="--rotate: 330deg; --delay: 1.7s">
+                        <div class="birthday-candle">
+                            <div class="candle-flame"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Additional candles -->
+                    <div class="candle-wrapper" style="--rotate: 60deg; --delay: 2.0s">
+                        <div class="birthday-candle">
+                            <div class="candle-flame"></div>
+                        </div>
+                    </div>
+                    <div class="candle-wrapper" style="--rotate: 120deg; --delay: 2.3s">
+                        <div class="birthday-candle">
+                            <div class="candle-flame"></div>
+                        </div>
+                    </div>
+                    <div class="candle-wrapper" style="--rotate: 180deg; --delay: 2.6s">
+                        <div class="birthday-candle">
+                            <div class="candle-flame"></div>
+                        </div>
+                    </div>
+                    <div class="candle-wrapper" style="--rotate: 240deg; --delay: 2.9s">
+                        <div class="birthday-candle">
+                            <div class="candle-flame"></div>
+                        </div>
+                    </div>
+                    <div class="candle-wrapper" style="--rotate: 300deg; --delay: 3.2s">
+                        <div class="birthday-candle">
+                            <div class="candle-flame"></div>
+                        </div>
+                    </div>
+                    <div class="candle-wrapper" style="--rotate: 360deg; --delay: 3.5s">
+                        <div class="birthday-candle">
+                            <div class="candle-flame"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="photo-frame">
+                    <!-- Replace with her actual photo -->
+                    <div class="her-photo" id="her-photo"></div>
+                    <div class="light-flare"></div>
+                </div>
+                
+                <!-- Flashback memories effect -->
+                <div class="flashbacks-container">
+                    <div class="flashback-overlay"></div>
+                    <div class="flashback-image-container">
+                        <div class="flashback-image" style="background-image: url('https://via.placeholder.com/400x400/ffd1dc?text=Memory+1')"></div>
+                        <div class="flashback-image" style="background-image: url('https://via.placeholder.com/400x400/ffd1dc?text=Memory+2')"></div>
+                        <div class="flashback-image" style="background-image: url('https://via.placeholder.com/400x400/ffd1dc?text=Memory+3')"></div>
+                        <div class="flashback-image" style="background-image: url('https://via.placeholder.com/400x400/ffd1dc?text=Memory+4')"></div>
+                        <div class="flashback-image" style="background-image: url('https://via.placeholder.com/400x400/ffd1dc?text=Memory+5')"></div>
+                    </div>
+                </div>
+                
+                <!-- Fireworks container -->
+                <div class="fireworks-container" id="fireworks-container"></div>
+                
+                <div class="flowers-container">
+                    <!-- Flowers will be added dynamically via JavaScript -->
+                </div>
+                
+                <div class="floating-words">
+                    <span class="word" style="--delay: 2s; --position: 20%">Beautiful</span>
+                    <span class="word" style="--delay: 3.5s; --position: 65%">Amazing</span>
+                    <span class="word" style="--delay: 5s; --position: 40%">Loving</span>
+                    <span class="word" style="--delay: 6.5s; --position: 80%">Incredible</span>
+                    <span class="word" style="--delay: 8s; --position: 30%">Wonderful</span>
+                    <span class="word" style="--delay: 9.5s; --position: 70%">Magical</span>
+                    <span class="word" style="--delay: 11s; --position: 50%">Sweet</span>
+                    <span class="word" style="--delay: 12.5s; --position: 25%">Charming</span>
+                    <span class="word" style="--delay: 14s; --position: 60%">Perfect</span>
+                </div>
+                
+                <div class="memory-bubbles">
+                    <div class="bubble" style="--delay: 4s; --position-x: 20%; --position-y: 30%">Our first kiss</div>
+                    <div class="bubble" style="--delay: 7s; --position-x: 75%; --position-y: 60%">That summer day</div>
+                    <div class="bubble" style="--delay: 10s; --position-x: 30%; --position-y: 70%">When we danced</div>
+                    <div class="bubble" style="--delay: 13s; --position-x: 65%; --position-y: 25%">Our adventures</div>
+                    <div class="bubble" style="--delay: 16s; --position-x: 40%; --position-y: 40%">The first time</div>
+                    <div class="bubble" style="--delay: 19s; --position-x: 85%; --position-y: 45%">Coffee dates</div>
+                    <div class="bubble" style="--delay: 22s; --position-x: 15%; --position-y: 80%">Laughing together</div>
+                </div>
+            </div>
+            <button class="continue-btn" id="photo-continue">Continue</button>
+        </div>
+        
+        <div class="content hidden" id="main-content">
+            <div class="message-card">
+                <h2>To My Amazing Girlfriend</h2>
+                <p class="message">
+                    Today is all about celebrating the incredible person you are.
+                    You bring so much joy and love into my life every single day.
+                    I've created this little digital space to show you just how much you mean to me.
+                </p>
+                <button class="continue-btn" id="continue-btn">Continue</button>
+            </div>
+        </div>
+        
+        <div class="memory-gallery hidden" id="memory-gallery">
+            <h2>Our Memories Together</h2>
+            <div class="gallery">
+                <div class="memory-card" style="--delay: 0.1s">
+                    <div class="memory-card-inner">
+                        <div class="memory-card-front">
+                            <div class="placeholder">Our First Date</div>
+                        </div>
+                        <div class="memory-card-back">
+                            <p>Remember that day? I was so nervous, but you made it special.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="memory-card" style="--delay: 0.2s">
+                    <div class="memory-card-inner">
+                        <div class="memory-card-front">
+                            <div class="placeholder">That Trip</div>
+                        </div>
+                        <div class="memory-card-back">
+                            <p>Exploring new places with you makes every journey unforgettable.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="memory-card" style="--delay: 0.3s">
+                    <div class="memory-card-inner">
+                        <div class="memory-card-front">
+                            <div class="placeholder">Movie Night</div>
+                        </div>
+                        <div class="memory-card-back">
+                            <p>Even quiet nights in become magical moments with you.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="memory-card" style="--delay: 0.4s">
+                    <div class="memory-card-inner">
+                        <div class="memory-card-front">
+                            <div class="placeholder">Special Moments</div>
+                        </div>
+                        <div class="memory-card-back">
+                            <p>It's the little things that make our relationship so wonderful.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="memory-card" style="--delay: 0.5s">
+                    <div class="memory-card-inner">
+                        <div class="memory-card-front">
+                            <div class="placeholder">Beach Day</div>
+                        </div>
+                        <div class="memory-card-back">
+                            <p>The sun, sand, and your beautiful smile - a perfect combination.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="memory-card" style="--delay: 0.6s">
+                    <div class="memory-card-inner">
+                        <div class="memory-card-front">
+                            <div class="placeholder">Birthday Surprise</div>
+                        </div>
+                        <div class="memory-card-back">
+                            <p>The look on your face was priceless and made all the planning worth it.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="memory-instructions">Click on cards to reveal memories</div>
+            <button class="continue-btn" id="gallery-continue">Continue</button>
+        </div>
+        
+        <div class="reasons hidden" id="reasons">
+            <h2>Reasons Why I Love You</h2>
+            <div class="reasons-container" id="reasons-list">
+                <!-- Will be populated by JavaScript with enhanced reason cards -->
+            </div>
+            <div class="reasons-instruction">Hover over images to see the magic ✨</div>
+            <button class="continue-btn" id="reasons-continue">Continue</button>
+        </div>
+        
+        <div class="poem hidden" id="poem">
+            <div class="poem-background"></div>
+            <div class="poem-ink-drops"></div>
+            <div class="poem-container">
+                <h2 class="poem-title">A Poem For You</h2>
+                
+                <div class="poem-layout">
+                    <div class="poem-photo-left">
+                        <div class="poem-frame left-frame">
+                            <div class="frame-photo photo1"></div>
+                            <div class="frame-decoration"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="poem-content">
+                        <div class="writing-paper">
+                            <div class="paper-lines"></div>
+                            <div class="pen-container">
+                                <div class="pen"></div>
+                                <div class="pen-tip"></div>
+                                <div class="ink-drop"></div>
+                            </div>
+                            <div class="handwritten-poem">
+                                <p class="poem-line"><span class="character">I</span><span class="character">n</span> <span class="character">e</span><span class="character">v</span><span class="character">e</span><span class="character">r</span><span class="character">y</span> <span class="character">s</span><span class="character">u</span><span class="character">n</span><span class="character">r</span><span class="character">i</span><span class="character">s</span><span class="character">e</span><span class="character">,</span> <span class="character">I</span> <span class="character">s</span><span class="character">e</span><span class="character">e</span> <span class="character">y</span><span class="character">o</span><span class="character">u</span><span class="character">r</span> <span class="character">s</span><span class="character">m</span><span class="character">i</span><span class="character">l</span><span class="character">e</span><span class="character">,</span></p>
+                                <p class="poem-line"><span class="character">I</span><span class="character">n</span> <span class="character">e</span><span class="character">v</span><span class="character">e</span><span class="character">r</span><span class="character">y</span> <span class="character">s</span><span class="character">u</span><span class="character">n</span><span class="character">s</span><span class="character">e</span><span class="character">t</span><span class="character">,</span> <span class="character">y</span><span class="character">o</span><span class="character">u</span><span class="character">r</span> <span class="character">g</span><span class="character">r</span><span class="character">a</span><span class="character">c</span><span class="character">e</span> <span class="character">a</span><span class="character">n</span><span class="character">d</span> <span class="character">s</span><span class="character">t</span><span class="character">y</span><span class="character">l</span><span class="character">e</span><span class="character">.</span></p>
+                                <p class="poem-line"><span class="character">Y</span><span class="character">o</span><span class="character">u</span><span class="character">r</span> <span class="character">l</span><span class="character">a</span><span class="character">u</span><span class="character">g</span><span class="character">h</span><span class="character">t</span><span class="character">e</span><span class="character">r</span> <span class="character">e</span><span class="character">c</span><span class="character">h</span><span class="character">o</span><span class="character">e</span><span class="character">s</span> <span class="character">l</span><span class="character">i</span><span class="character">k</span><span class="character">e</span> <span class="character">m</span><span class="character">u</span><span class="character">s</span><span class="character">i</span><span class="character">c</span> <span class="character">s</span><span class="character">w</span><span class="character">e</span><span class="character">e</span><span class="character">t</span><span class="character">,</span></p>
+                                <p class="poem-line"><span class="character">M</span><span class="character">a</span><span class="character">k</span><span class="character">i</span><span class="character">n</span><span class="character">g</span> <span class="character">m</span><span class="character">y</span> <span class="character">h</span><span class="character">e</span><span class="character">a</span><span class="character">r</span><span class="character">t</span> <span class="character">s</span><span class="character">k</span><span class="character">i</span><span class="character">p</span> <span class="character">i</span><span class="character">t</span><span class="character">s</span> <span class="character">e</span><span class="character">v</span><span class="character">e</span><span class="character">r</span><span class="character">y</span> <span class="character">b</span><span class="character">e</span><span class="character">a</span><span class="character">t</span><span class="character">.</span></p>
+                                <div class="poem-spacer"></div>
+                                <p class="poem-line"><span class="character">Y</span><span class="character">o</span><span class="character">u</span><span class="character">r</span> <span class="character">k</span><span class="character">i</span><span class="character">n</span><span class="character">d</span><span class="character">n</span><span class="character">e</span><span class="character">s</span><span class="character">s</span> <span class="character">f</span><span class="character">l</span><span class="character">o</span><span class="character">w</span><span class="character">s</span> <span class="character">l</span><span class="character">i</span><span class="character">k</span><span class="character">e</span> <span class="character">a</span> <span class="character">g</span><span class="character">e</span><span class="character">n</span><span class="character">t</span><span class="character">l</span><span class="character">e</span> <span class="character">s</span><span class="character">t</span><span class="character">r</span><span class="character">e</span><span class="character">a</span><span class="character">m</span><span class="character">,</span></p>
+                                <p class="poem-line"><span class="character">Y</span><span class="character">o</span><span class="character">u</span><span class="character">'</span><span class="character">r</span><span class="character">e</span> <span class="character">m</span><span class="character">o</span><span class="character">r</span><span class="character">e</span> <span class="character">b</span><span class="character">e</span><span class="character">a</span><span class="character">u</span><span class="character">t</span><span class="character">i</span><span class="character">f</span><span class="character">u</span><span class="character">l</span> <span class="character">t</span><span class="character">h</span><span class="character">a</span><span class="character">n</span> <span class="character">m</span><span class="character">y</span> <span class="character">w</span><span class="character">i</span><span class="character">l</span><span class="character">d</span><span class="character">e</span><span class="character">s</span><span class="character">t</span> <span class="character">d</span><span class="character">r</span><span class="character">e</span><span class="character">a</span><span class="character">m</span><span class="character">.</span></p>
+                                <p class="poem-line"><span class="character">O</span><span class="character">n</span> <span class="character">t</span><span class="character">h</span><span class="character">i</span><span class="character">s</span> <span class="character">s</span><span class="character">p</span><span class="character">e</span><span class="character">c</span><span class="character">i</span><span class="character">a</span><span class="character">l</span> <span class="character">d</span><span class="character">a</span><span class="character">y</span><span class="character">,</span> <span class="character">I</span> <span class="character">w</span><span class="character">a</span><span class="character">n</span><span class="character">t</span> <span class="character">y</span><span class="character">o</span><span class="character">u</span> <span class="character">t</span><span class="character">o</span> <span class="character">k</span><span class="character">n</span><span class="character">o</span><span class="character">w</span><span class="character">,</span></p>
+                                <p class="poem-line"><span class="character">M</span><span class="character">y</span> <span class="character">l</span><span class="character">o</span><span class="character">v</span><span class="character">e</span> <span class="character">f</span><span class="character">o</span><span class="character">r</span> <span class="character">y</span><span class="character">o</span><span class="character">u</span> <span class="character">w</span><span class="character">i</span><span class="character">l</span><span class="character">l</span> <span class="character">f</span><span class="character">o</span><span class="character">r</span><span class="character">e</span><span class="character">v</span><span class="character">e</span><span class="character">r</span> <span class="character">g</span><span class="character">r</span><span class="character">o</span><span class="character">w</span><span class="character">.</span></p>
+                                <div class="signature">
+                                    <span class="character">W</span><span class="character">i</span><span class="character">t</span><span class="character">h</span> <span class="character">a</span><span class="character">l</span><span class="character">l</span> <span class="character">m</span><span class="character">y</span> <span class="character">l</span><span class="character">o</span><span class="character">v</span><span class="character">e</span><span class="character">,</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="poem-photo-right">
+                        <div class="poem-frame right-frame">
+                            <div class="frame-photo photo2"></div>
+                            <div class="frame-decoration"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="poem-decorations">
+                    <div class="wax-seal"></div>
+                    <div class="poem-flower flower1"></div>
+                    <div class="poem-flower flower2"></div>
+                    <div class="poem-flower flower3"></div>
+                </div>
+                
+                <button class="continue-btn poem-btn" id="poem-continue">Continue</button>
+            </div>
+        </div>
+        
+        <div class="final hidden" id="final">
+            <h2 class="birthday-wish">Happy Birthday, My Love!</h2>
+            <div class="cake">
+                <div class="candle">
+                    <div class="flame"></div>
+                </div>
+            </div>
+            <p class="final-message">
+                Today and every day, I celebrate the amazing person you are.
+                Thank you for being in my life.
+                I love you more than words can express!
+            </p>
+            <button class="wish-btn" id="wish-btn">Make a Wish</button>
+        </div>
+        
+        <!-- New Apology Section -->
+        <div class="apology-section hidden" id="apology-section">
+            <div class="falling-petals"></div>
+            
+            <div class="apology-stars"></div>
+            
+            <div class="ripple-container">
+                <div class="ripple-effect"></div>
+            </div>
+            
+            <div class="paper-torn">
+                <div class="paper-content">
+                    <div class="writing-animation">
+                        <h2 class="apology-title">I'm Sorry</h2>
+                        <div class="handwritten-text">
+                            <p class="typewriter-text">For everything I've said that might have hurt you...</p>
+                            <p class="typewriter-text delay-1">For every moment I wasn't there when you needed me...</p>
+                            <p class="typewriter-text delay-2">For all the times I didn't understand...</p>
+                            <p class="typewriter-text delay-3">I deeply regret any pain I've caused...</p>
+                            <p class="typewriter-text delay-4">Please forgive me...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="floating-hearts-container">
+                <div class="mended-heart">
+                    <div class="heart-half left"></div>
+                    <div class="heart-half right"></div>
+                </div>
+            </div>
+            
+            <div class="glowing-particles"></div>
+            
+            <div class="apology-message">
+                <span class="highlight-text">I promise to be better</span>
+                <span class="highlight-text delay-2">You mean everything to me</span>
+                <span class="highlight-text delay-4">Let me make it up to you</span>
+            </div>
+            
+            <div class="rain-container">
+                <div class="rain-drop" style="--delay: 1s; --position: 10%;"></div>
+                <div class="rain-drop" style="--delay: 1.5s; --position: 20%;"></div>
+                <div class="rain-drop" style="--delay: 2s; --position: 30%;"></div>
+                <div class="rain-drop" style="--delay: 2.5s; --position: 40%;"></div>
+                <div class="rain-drop" style="--delay: 3s; --position: 50%;"></div>
+                <div class="rain-drop" style="--delay: 3.5s; --position: 60%;"></div>
+                <div class="rain-drop" style="--delay: 4s; --position: 70%;"></div>
+                <div class="rain-drop" style="--delay: 4.5s; --position: 80%;"></div>
+                <div class="rain-drop" style="--delay: 5s; --position: 90%;"></div>
+            </div>
+            
+            <button class="forgive-btn" id="forgive-btn">I Forgive You</button>
+        </div>
+    </div>
+    
+    <div id="confetti-container" class="hidden"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="./Js/script.js"></script>
+    <script>
+        // Make sure all sections except intro are hidden at start
+        const sections = document.querySelectorAll('.photos, .gallery, .messages, .reasons, .poem, .final, .apology-section');
+        sections.forEach(section => {
+            section.classList.add('hidden');
+        });
+        
+        // Show only the intro section
+        document.getElementById('intro').classList.remove('hidden');
+    </script>
+</body>
+</html> 

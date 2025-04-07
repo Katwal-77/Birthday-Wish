@@ -1,0 +1,80 @@
+How to Add Photos to Your Birthday Surprise:
+
+1. MAIN PROFILE PHOTO:
+   Choose a beautiful photo of your girlfriend (preferably in square format)
+   Save it as "her-photo.jpg" or "her-photo.png" in this folder
+   Update the CSS in styles.css:
+
+   Find this section:
+   
+   .her-photo {
+       width: 100%;
+       height: 100%;
+       background-color: #ffd1dc; /* Placeholder pink color */
+       background-image: url('https://via.placeholder.com/300x300'); /* Replace with actual photo URL */
+       background-size: cover;
+       background-position: center;
+       transform: scale(0.9);
+       opacity: 0.8;
+       animation: photoZoom 10s ease-in-out infinite alternate;
+   }
+
+   And change it to:
+   
+   .her-photo {
+       width: 100%;
+       height: 100%;
+       background-color: #ffd1dc; /* Placeholder pink color */
+       background-image: url('her-photo.jpg'); /* Or her-photo.png - match your file name */
+       background-size: cover;
+       background-position: center;
+       transform: scale(0.9);
+       opacity: 0.8;
+       animation: photoZoom 10s ease-in-out infinite alternate;
+   }
+
+2. FLOATING POLAROID IMAGES:
+   Add 4 additional photos of you two together (they should be square format)
+   Save them as "photo1.jpg", "photo2.jpg", "photo3.jpg", and "photo4.jpg" in this folder
+   Update the HTML in index.html:
+
+   Find each polaroid image section and update it:
+   
+   <div class="polaroid-image" style="background-image: url('https://via.placeholder.com/150x150/ffd1dc?text=Photo+1')"></div>
+   
+   Change to:
+   
+   <div class="polaroid-image" style="background-image: url('photo1.jpg')"></div>
+   
+   Repeat for all 4 polaroid images, using the appropriate photo file name for each.
+   You can also update the captions to match the memories in the photos.
+
+3. FLASHBACK MEMORIES:
+   Add 5 more photos for the flashback memories (can be any size but square or 4:3 ratio works best)
+   Save them as "memory1.jpg", "memory2.jpg", "memory3.jpg", "memory4.jpg", and "memory5.jpg"
+   Update the HTML in index.html:
+
+   Find each flashback image section and update it:
+   
+   <div class="flashback-image" style="background-image: url('https://via.placeholder.com/400x400/ffd1dc?text=Memory+1')"></div>
+   
+   Change to:
+   
+   <div class="flashback-image" style="background-image: url('memory1.jpg')"></div>
+   
+   Repeat for all 5 memory images.
+
+ENHANCED FEATURES:
+
+The photos will now be presented with these special effects:
+- A professional camera lens that focuses on her photo with a realistic shutter sound
+- Beautiful birthday candles with flickering flames that surround her photo
+- Spectacular fireworks that explode around her image in celebration
+- NEW: Realistic rockets that launch and trace through the background
+- NEW: Floating polaroid images of your memories together that hover around the screen
+- NEW: Cinematic flashback sequence that shows your memories one by one
+- All combined with the blooming flowers and floating words
+
+For the best effect, choose clear, well-lit photos that capture significant moments in your relationship. Consider using photos from special occasions, trips, or everyday moments that hold meaning for both of you.
+
+The animation is now full-screen for maximum impact! 
