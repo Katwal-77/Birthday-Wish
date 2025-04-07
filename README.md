@@ -1,32 +1,32 @@
-# Birthday Surprise Website
+# Birthday Surprise Website 🎉
 
-A beautiful interactive birthday surprise for your girlfriend! This website features:
+A beautiful, interactive birthday surprise for your girlfriend! This website is designed to create a magical and unforgettable experience. It features:
 
-- Animated transitions and effects
-- **NEW: Realistic camera lens effect that focuses on her photo with shutter animation and sounds**
-- **NEW: Stunning birthday candles that surround her photo with flickering flames**
-- **NEW: Spectacular fireworks display that explodes in celebration around her image**
-- **NEW: Stunning central animation with her photo surrounded by blooming flowers**
-- **NEW: Elegant flowing words and memory bubbles with dreamy light effects**
-- Interactive memory cards
-- Personalized messages and reasons why you love her
-- A beautiful poem
-- Confetti animation when she makes a wish
+- Animated transitions and effects ✨
+- **NEW: Realistic camera lens effect that focuses on her photo with shutter animation and sounds 📸**
+- **NEW: Stunning birthday candles that surround her photo with flickering flames 🕯️**
+- **NEW: Spectacular fireworks display that explodes in celebration around her image 🎆**
+- **NEW: Stunning central animation with her photo surrounded by blooming flowers 🌸**
+- **NEW: Elegant flowing words and memory bubbles with dreamy light effects 💫**
+- Interactive memory cards 🖼️
+- Personalized messages and reasons why you love her ❤️
+- A beautiful poem 📝
+- Confetti animation when she makes a wish 🎊
 - A hidden easter egg (Konami code: ↑↑↓↓←→←→BA)
 
 ## How to Use
 
 1. Simply open `index.html` in a web browser.
 2. The website will guide her through a series of interactive sections:
-   - A welcome screen with a pulsing heart
-   - **NEW: A professional camera animation that focuses and captures her photo**
-   - **NEW: A dazzling display with birthday candles and fireworks celebration**
-   - **NEW: A magical animated photo display with blooming flowers and memories**
-   - A personal message
-   - A gallery of memories (you can customize the placeholders with actual photos)
-   - Reasons why you love her
-   - A special poem
-   - A birthday cake with candle to make a wish
+   - A welcome screen with a pulsing heart ❤️
+   - **NEW: A professional camera animation that focuses and captures her photo 📷**
+   - **NEW: A dazzling display with birthday candles and fireworks celebration 🎇**
+   - **NEW: A magical animated photo display with blooming flowers and memories 🌺**
+   - A personal message 📨
+   - A gallery of memories (you can customize the placeholders with actual photos) 🖼️
+   - Reasons why you love her 💕
+   - A special poem 📝
+   - A birthday cake with a candle to make a wish 🎂
 
 ## Customization
 
@@ -44,8 +44,8 @@ You can personalize this for your girlfriend by:
 
 ## Secret Features
 
-- Konami Code: Have her press ↑↑↓↓←→←→BA on the keyboard for a special hidden message!
-- You can add photos by replacing the placeholder divs with actual images
+- **Konami Code**: Have her press ↑↑↓↓←→←→BA on the keyboard for a special hidden message! 🎁
+- You can add photos by replacing the placeholder divs with actual images.
 
 ## Technologies Used
 
@@ -56,4 +56,15 @@ You can personalize this for your girlfriend by:
 - Dynamic particle systems for realistic fireworks
 - Professional camera simulation effects
 
-Enjoy making her birthday special! ❤️ # Birthday-Wish
+---
+
+## नेपालीमा विशेष सन्देश ❤️
+
+यो वेबसाइट तपाईंको प्रेमिकाको जन्मदिनलाई अविस्मरणीय बनाउनको लागि डिजाइन गरिएको छ। यसमा धेरै सुन्दर र अन्तरक्रियात्मक विशेषताहरू छन्। तपाईं यसलाई सजिलै अनुकूलन गर्न सक्नुहुन्छ र यसलाई अझ व्यक्तिगत बनाउन सक्नुहुन्छ। 
+
+### तपाईंको प्रेमिकाको लागि सन्देश:
+"तिमी मेरो जीवनको सबैभन्दा सुन्दर उपहार हौ। यो वेबसाइट तिमीलाई म कति माया गर्छु भन्ने देखाउनको लागि हो। तिमीलाई जन्मदिनको धेरै धेरै शुभकामना! 🎂🎉"
+
+---
+
+Enjoy making her birthday special! ❤️
